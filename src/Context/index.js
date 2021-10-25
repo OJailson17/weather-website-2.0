@@ -10,7 +10,9 @@ export const TempData = ({ children }) => {
   const [cityData, setCityData] = useState({});
 
   const apiKey = process.env.REACT_APP_API_KEY;
-  const apiUrl = `http://api.openweathermap.org/data/2.5/forecast?q=${city}&lang=pt&appid=${apiKey}`;
+  const apiUrl = `http://api.openweathermap.org/data/2.5/forecast?q=${
+    city || "Rio de Janeiro"
+  }&lang=pt&appid=${apiKey}`;
 
   function refreshPage() {
     window.location.reload(false);
