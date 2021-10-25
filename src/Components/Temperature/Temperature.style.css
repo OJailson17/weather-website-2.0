@@ -1,0 +1,142 @@
+.main-header {
+    width: 100%;
+    max-width: 459px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--background);
+}
+
+.first-container{
+    width: 100%;
+    height: 380px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.background {
+    position: relative;
+    top: 30px;
+    opacity: .1;
+    width: 100%;
+    height: 100%;
+    background-image: url("../../images/Cloud-background.png");
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position-x: -6rem;
+    background-position-y: 2rem;
+    background-size: 570px;
+}
+
+.header-buttons {
+    position: absolute;
+    top: 18px;
+    width: 100%;
+    max-width: 459px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-buttons button, .btn {
+    margin: 0 11px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19px;
+    color: white;
+    border: none;
+    background-color: #6E707A;
+    height: 40px;
+}
+
+.header-buttons .search {
+    width: 161px;
+    text-align: center;
+    border-radius: 4px;
+}
+
+.header-buttons .myLocation, .btn {
+    width: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-temp {
+    width: 150px;
+    margin: 0 auto;
+    position: absolute;
+    top: 134px;
+}
+
+.image-temp .image {
+    width: 100%;
+    height: 100%;
+}
+
+.second-container {
+    width: 100%;
+    height: calc(810px - 340px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.temperature {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.temperature p {
+    font-size: 144px;
+    line-height: 169px;
+    font-weight: 500;
+    color: white;
+}
+
+.temperature span {
+    position: relative;
+    top: 2rem;
+    font-size: 48px;
+    line-height: 56px;
+}
+
+.main-header span {
+    color: #88869D;
+    font-size: 18px;
+}
+
+
+.weather-description span{
+    font-size: 48px;
+}
+
+.extra-info {
+    width: 100%;
+}
+
+.date {
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    font-weight: 500;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+.location {
+    margin-top: 54px;
+    text-align: center;
+}
+
+@media (min-width: 1440px) {
+    .header-buttons button {
+        margin: 30px;
+    }
+}

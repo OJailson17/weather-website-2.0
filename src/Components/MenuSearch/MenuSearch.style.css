@@ -1,0 +1,92 @@
+.sidenav {
+  height: 100%;
+  max-width: 448px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #1e213a;
+  overflow-x: hidden;
+  transition: 0.2s;
+  padding-top: 60px;
+}
+
+.closeBtn {
+  position: absolute;
+  top: 1rem;
+  right: 25px;
+  margin-left: 50px;
+}
+
+.sidenav-header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  margin-top: 29px;
+}
+
+.sidenav-input {
+  display: flex;
+  align-items: center;
+}
+
+.sidenav-input input {
+  width: 85%;
+  height: 48px;
+  border: 1px solid #e7e7eb;
+  background: transparent;
+  padding-left: 56px;
+  position: relative;
+  margin-left: 30px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #e7e7eb;
+  outline: none;
+}
+
+.sidenav-header .searchBtn {
+  background: #3c47e9;
+  width: 30%;
+  height: 48px;
+  border: none;
+  color: #e7e7eb;
+  margin-right: 20px;
+}
+
+.recent-search-container {
+  margin-top: 58px;
+}
+
+.recent-city {
+  width: 90%;
+  max-width: 351px;
+  height: 64px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  margin-top: 20px;
+  padding: 10px;
+  border: 1px solid #616475;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+  .sidenav .recent-city {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .sidenav {
+    transition: 0.7s;
+  }
+
+  .recent-city {
+    width: 390px;
+  }
+}

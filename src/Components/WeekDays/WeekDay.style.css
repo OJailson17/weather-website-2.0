@@ -1,0 +1,69 @@
+.weekDaysContainer {
+    width: 100%;
+    height: 100%;
+    background: #100E1D;
+}
+
+.weekDays {
+    width: 70%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 26px;
+    row-gap: 32px;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding-top: 52px;
+    padding-bottom: 51px;
+}
+
+
+.day-container {
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+    width: 130px;
+    height: 177px;
+    background: #1E213A;
+    color: #E7E7EB;
+    font-size: 16px;
+}
+
+.day-container img {
+    width: 65px;
+    height: 65px;
+    margin: 10px 0 31px 0;
+}
+
+.day-container > p {
+    margin-top: 18px;
+}
+
+.minmax {
+    width: 100px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.min {
+    color: #A09FB1;
+}
+
+
+@media (min-width: 1440px) {
+    .weekDays {
+        display: flex;  
+        margin-top: 50px
+    }
+
+    .convert-container {
+        width: 70%;
+        display: flex;
+        justify-content: flex-end;
+        margin: 0 auto;
+        font-size: 18px;
+        margin-top: 40px;
+    }
+}
