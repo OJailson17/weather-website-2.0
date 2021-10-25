@@ -5,14 +5,12 @@ dotenv.config();
 export const TempDataContext = createContext();
 
 export const TempData = ({ children }) => {
-  const [city, setCity] = useState("Utinga");
+  const [city, setCity] = useState("São Paulo");
   const [allData, setAllData] = useState({});
   const [cityData, setCityData] = useState({});
 
   const apiKey = process.env.REACT_APP_API_KEY;
-  const apiUrl = `http://api.openweathermap.org/data/2.5/forecast?q=${
-    city || "Rio de Janeiro"
-  }&lang=pt&appid=${apiKey}`;
+  const apiUrl = `http://api.openweathermap.org/data/2.5/forecast?q=${city}&lang=pt&appid=${apiKey}`;
 
   function refreshPage() {
     window.location.reload(false);
