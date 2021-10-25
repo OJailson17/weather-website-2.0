@@ -5,7 +5,7 @@ dotenv.config();
 export const TempDataContext = createContext();
 
 export const TempData = ({ children }) => {
-  const [city, setCity] = useState("São Paulo");
+  const [city, setCity] = useState("Utinga");
   const [allData, setAllData] = useState({});
   const [cityData, setCityData] = useState({});
 
